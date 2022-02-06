@@ -173,3 +173,32 @@ main{
   float: right;
   padding-right: 10px;
 }
+#iniciar{
+  display: inline-block;
+  margin: auto;
+  width: auto;
+  background-color: rgb(1, 1, 1, 0.8);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1E1E1E;
+  border-radius: 15px;
+  padding: 10px;
+}
+#tabla_prod{
+  margin: auto;
+  border-spacing: 35px;
+  text-align: center;
+  
+}
+.img_prod{
+  width: 90%;
+  height: 90%;
+}
+.recuadros{
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.recuadros:hover{
+  background-color: #414141;
+  color: azure;
+}
