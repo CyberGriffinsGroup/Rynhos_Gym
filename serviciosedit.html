@@ -2,27 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rynhos gym</title>
+    <link rel="shortcut icon" href="imagenes/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="estillos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div>
-            <img src="logo.jpeg" alt="logo">
+            <img src="imagenes/logo.png" alt="logo">
         </div>
-        <h1>Rynhos gym</h1>
-        <p id="pesa"><i class="fas fa-dumbbell"></i></p>
-    </header>
+        <h1>Rynhos gym <i class="fas fa-dumbbell"></i></h1>
+    </header>   
     <nav>
         <ul class="menu1">
             <li class="limenu"><a href="sesionPersonal.html">Inicio </a></li> 
-            <li class="limenu"><a href="productosedit.html">Producto</a></li>
-            <li class="limenu"><a href="serviciosedit.html">Contratacion de servicios</a></li>
-            <li class="limenu"><a href="serviciosedit.html">Nuestros servicios</a></li>
+            <li class="limenu"><a href="productosedit.html">Editable Producto</a></li>
+            <li class="limenu"><a href="serviciosedit.html">Editable Servicios</a></li>
+            <li class="limenu"><a href="empleadosedit.html">Editable Empleados</a></li>
+            <li class="limenu"><a href="editarmarca.html">Editable Marca</a></li>
+            <li class="limenu"><a href="editarInstructor.html">Editable Instructor</a></li>
+            <li class="limenu"><a href="editarClientes.html">Editable Clientes</a></li>
             <li style="float:right" class="limenu"><a href="index.html">Cerrar secion</a></li>
         </ul>
     </nav>
@@ -30,177 +30,156 @@
     <section class="MenudEditable"> 
         <table >
             <tr>
+                <th>
+                    <form method="post" action="#">
+                        <button class="btnProdu" type="submit"> Agrerar </button> 
+                         </form>
+                </th>
+            </tr>
+            <tr>
                 <td class="recu_dit">
-                    <img class="img_list" src="pesas.jpg" >
+                    Deporte
                 </td>
                 <td class="recu_dit">
-                    Pesas  <br> Costo: $200
+                    Clave del Servicio
+                </td>
+                <td class="recu_dit">
+                    Nombre
+                </td>
+                <td class="recu_dit">
+                    Costo
+                </td>
+            </tr>
+            <tr>
+                <td class="recu_dit">
+                    <img class="img_list" src="imagenes/pesas.jpg" >
+                </td>
+                <td class="recu_dit">
+                    100
+                </td>
+                <td class="recu_dit">
+                    Pesas
+                </td>
+                <td class="recu_dit">
+                    $200
                 </td>
                 <td class="recu_dit">
                     <a href="serviciosedit.html">Editar
                 </td>
                 <td class="recu_dit">
-                    <form method="post" action="serviciosedit.html" onsubmit="return confirmation()">
-                        <button type="submit" style="width:80%;height:80%;"> Borrar</button> 
-                         </form>
-                        <script type="text/javascript">
-                            function confirmation() 
-                            {
-                               if(confirm("¿Esta seguro de borrar el registro?"))
-                           {
-                              return true;
-                           }
-                           else
-                           {
-                              return false;
-                           }
-                            }
-                           </script>  
+                    <form method="post" action="serviciosedit.html">
+                        <button type="submit" style="width:80%;height:80%"> Borrar</button> 
+                         </form> 
                 </td>
             </tr>
             <tr>    
                 <td id="recu_img">
-                    <img class="img_list" src="cardio.jpeg">
+                    <img class="img_list" src="imagenes/cardio.jpeg">
                 </td>
                 <td class="recu_dit">
-                    Cardio <br> Costo: $100
+                    200
+                </td>
+                <td class="recu_dit">
+                    Cradio
+                </td>
+                <td class="recu_dit">
+                    $100
                 </td>
                 <td class="recu_dit">
                     <a href="serviciosedit.html">Editar
                 </td>
                 <td class="recu_dit">
-                    <form method="post" action="serviciosedit.html" onsubmit="return confirmation()">
+                    <form method="post" action="serviciosedit.html">
                         <button type="submit" style="width:80%;height:80%"> Borrar</button> 
                          </form>
-                        <script type="text/javascript">
-                            function confirmation() 
-                            {
-                               if(confirm("¿Esta seguro de borrar el registro?"))
-                           {
-                              return true;
-                           }
-                           else
-                           {
-                              return false;
-                           }
-                            }
-                           </script>  
                 </td>
             </tr>
             <tr class="recu_dit">                
                 <td class="recu_dit">
-                    <img class="img_list" src="box.jpg">
+                    <img class="img_list" src="imagenes/box.jpg">
                 </td>
                 <td class="recu_dit">
-                    Clases de Box  <br> Costo: $300
+                    300
+                </td>
+                <td class="recu_dit">
+                    Clases de Box
+                </td>
+                <td class="recu_dit">
+                    $300
                 </td>
                 <td class="recu_dit">
                     <a href="serviciosedit.html">Editar
                 </td>
                 <td class="recu_dit">
-                    <form method="post" action="serviciosedit.html" onsubmit="return confirmation()">
+                    <form method="post" action="serviciosedit.html">
                         <button type="submit" style="width:80%;height:80%"> Borrar</button> 
                          </form>
-                        <script type="text/javascript">
-                            function confirmation() 
-                            {
-                               if(confirm("¿Esta seguro de borrar el registro?"))
-                           {
-                              return true;
-                           }
-                           else
-                           {
-                              return false;
-                           }
-                            }
-                           </script>  
                 </td>
             </tr>
             <tr>
             <td class="recu_dit">
-                <img class="img_list" src="karate.jpg">
+                <img class="img_list" src="imagenes/karate.jpg">
             </td>
             <td class="recu_dit">
-                Clases de Karate <br> Costo: $300
+                400
+            </td>
+            <td class="recu_dit">
+                Clases de karate
+            </td>
+            <td class="recu_dit">
+                $300
             </td>
             <td class="recu_dit">
                 <a href="serviciosedit.html">Editar
             </td>
             <td class="recu_dit">
-                <form method="post" action="serviciosedit.html" onsubmit="return confirmation()">
+                <form method="post" action="serviciosedit.html">
                     <button type="submit" style="width:80%;height:80%"> Borrar</button> 
                      </form>
-                    <script type="text/javascript">
-                        function confirmation() 
-                        {
-                           if(confirm("¿Esta seguro de borrar el registro?"))
-                       {
-                          return true;
-                       }
-                       else
-                       {
-                          return false;
-                       }
-                        }
-                       </script>  
             </td>
         </tr>
         <tr class="recu_dit">
             <td class="recu_dit">
-                <img class="img_list" src="zumba.jpg">  
+                <img class="img_list" src="imagenes/zumba.jpg">  
             </td>
             <td class="recu_dit">
-                Clases de Zumba<br> Costo: $300
+                500
+            </td>
+            <td class="recu_dit">
+                Clases de Zumba
+            </td>
+            <td class="recu_dit">
+                $300
             </td>
             <td class="recu_dit">
                 <a href="serviciosedit.html">Editar
                 </td>
             <TD class="recu_dit"> 
-                <form method="post" action="serviciosedit.html" onsubmit="return confirmation()">
+                <form method="post" action="serviciosedit.html">
                     <button type="submit" style="width:80%;height:80%"> Borrar</button> 
-                     </form>
-                    <script type="text/javascript">
-                        function confirmation() 
-                        {
-                           if(confirm("¿Esta seguro de borrar el registro?"))
-                       {
-                          return true;
-                       }
-                       else
-                       {
-                          return false;
-                       }
-                        }
-                       </script>  
+                     </form> 
             </TD>
         </tr>
         <tr>
                 <TD class="recu_dit">
-                    <img class="img_list" src="todo.png">
+                    <img class="img_list" src="imagenes/todo.png">
                 </TD>
-            <TD class="recu_dit">
-                <p> Todo Incluido <br> Costo: $500</p>
-            </TD>
-            <TD class="recu_dit">
-                <p><a href="serviciosedit.html">Editar</p>
-                </TD>
-            <TD class="recu_dit">
-                <form method="post" action="seriviciosPersonal.html" onsubmit="return confirmation()">
+                <td class="recu_dit">
+                    600
+                </td>
+                <td class="recu_dit">
+                    Todo Incluido
+                </td>
+                <td class="recu_dit">
+                    $500
+                </td>
+                <td class="recu_dit">
+                    <a href="serviciosedit.html">Editar
+                </td>
+                 <TD class="recu_dit">
+                <form method="post" action="serviciosedit.html">
                     <button type="submit" style="width:80%;height:80%"> Borrar</button> 
                      </form>
-                    <script type="text/javascript">
-                        function confirmation() 
-                        {
-                           if(confirm("¿Esta seguro de borrar el registro?"))
-                       {
-                          return true;
-                       }
-                       else
-                       {
-                          return false;
-                       }
-                        }
-                       </script>  
             </TD>
         </tr>
         </table>
