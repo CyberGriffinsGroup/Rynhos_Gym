@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rynhos gym</title>
+    <link rel="shortcut icon" href="logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="estillos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,17 +11,20 @@
 <body>
     <header>
         <div>
-            <img src="logo.jpeg" alt="logo">
+            <img src="logo.png" alt="logo">
         </div>
-        <h1>Rynhos gym</h1>
-        <p id="pesa"><i class="fas fa-dumbbell"></i></p>
-    </header>
+        
+        <h1>Rynhos gym <i class="fas fa-dumbbell"></i></h1>
+    </header>   
     <nav>
         <ul class="menu1">
             <li class="limenu"><a href="sesionPersonal.html">Inicio </a></li> 
-            <li class="limenu"><a href="productosedit.html">Producto</a></li>
-            <li class="limenu"><a href="serviciosedit.html">Contratacion de servicios</a></li>
-            <li class="limenu"><a href="serviciosedit.html">Nuestros servicios</a></li>
+            <li class="limenu"><a href="productosedit.html">Editable Producto</a></li>
+            <li class="limenu"><a href="serviciosedit.html">Editable Servicios</a></li>
+            <li class="limenu"><a href="empleadosedit.html">Editable Empleados</a></li>
+            <li class="limenu"><a href="editarmarca.html">Editable Marca</a></li>
+            <li class="limenu"><a href="editarInstructor.html">Editable Instructor</a></li>
+            <li class="limenu"><a href="editarClientes.html">Editable Clientes</a></li>
             <li style="float:right" class="limenu"><a href="index.html">Cerrar secion</a></li>
         </ul>
     </nav>
@@ -31,176 +33,98 @@
         <table >
             <tr>
                 <td class="recu_dit">
-                    <img class="img_list" src="hydrotein.jfif" >
+                    <img class="img_list" src="hydrotein.png" >
                 </td>
                 <td class="recu_dit">
                     Proteina Hydrotein  <br> Costo: $900
                 </td>
                 <td class="recu_dit">
-                    <a href="#">Editar
+                    <a href="productosedit.html">Editar
                 </td>
                 <td class="recu_dit">
-                    <form method="post" action="#" onsubmit="return confirmation()">
-                        <button type="submit" style="width:80%;height:80%;"> Borrar</button> 
+                    <form method="post" action="productosedit.html">
+                        <button class="btnProdu" type="submit"> Borrar</button> 
                          </form>
-                        <script type="text/javascript">
-                            function confirmation() 
-                            {
-                               if(confirm("¿Esta seguro de borrar el registro?"))
-                           {
-                              return true;
-                           }
-                           else
-                           {
-                              return false;
-                           }
-                            }
-                           </script>  
                 </td>
             </tr>
             <tr>    
                 <td id="recu_img">
-                    <img class="img_list" src="whey_protein.jfif">
+                    <img class="img_list" src="whey_protein.png">
                 </td>
                 <td class="recu_dit">
                     Proteina whey ON <br> Costo: $1,200 
                 </td>
                 <td class="recu_dit">
-                    <a href="#">Editar
+                    <a href="productosedit.html">Editar
                 </td>
                 <td class="recu_dit">
-                    <form method="post" action="#" onsubmit="return confirmation()">
-                        <button type="submit" style="width:80%;height:80%"> Borrar</button> 
-                         </form>
-                        <script type="text/javascript">
-                            function confirmation() 
-                            {
-                               if(confirm("¿Esta seguro de borrar el registro?"))
-                           {
-                              return true;
-                           }
-                           else
-                           {
-                              return false;
-                           }
-                            }
-                           </script>  
+                    <form  method="post" action="productosedit.html">
+                        <button class="btnProdu" type="submit"> Borrar</button> 
+                         </form> 
                 </td>
             </tr>
             <tr class="recu_dit">                
                 <td class="recu_dit">
-                    <img class="img_list" src="prote_mujer.jfif">
+                    <img class="img_list" src="prote_mujer.png">
                 </td>
                 <td class="recu_dit">
                     Proteina para mujer  <br> Costo: $1,100
                 </td>
                 <td class="recu_dit">
-                    <a href="#">Editar
+                    <a href="productosedit.html">Editar
                 </td>
                 <td class="recu_dit">
-                    <form method="post" action="#" onsubmit="return confirmation()">
-                        <button type="submit" style="width:80%;height:80%"> Borrar</button> 
+                    <form method="post" action="productosedit.html">
+                        <button class="btnProdu" type="submit"> Borrar</button> 
                          </form>
-                        <script type="text/javascript">
-                            function confirmation() 
-                            {
-                               if(confirm("¿Esta seguro de borrar el registro?"))
-                           {
-                              return true;
-                           }
-                           else
-                           {
-                              return false;
-                           }
-                            }
-                           </script>  
                 </td>
             </tr>
             <tr>
             <td class="recu_dit">
-                <img class="img_list" src="prekaged-bottle.jfif">
+                <img class="img_list" src="prekaged-bottle.png">
             </td>
             <td class="recu_dit">
                 Pre-entrenador <br> Costo: $500
             </td>
             <td class="recu_dit">
-                <a href="#">Editar
+                <a href="productosedit.html">Editar
             </td>
             <td class="recu_dit">
-                <form method="post" action="#" onsubmit="return confirmation()">
-                    <button type="submit" style="width:80%;height:80%"> Borrar</button> 
+                <form method="post" action="productosedit.html">
+                    <button class="btnProdu" type="submit"> Borrar</button> 
                      </form>
-                    <script type="text/javascript">
-                        function confirmation() 
-                        {
-                           if(confirm("¿Esta seguro de borrar el registro?"))
-                       {
-                          return true;
-                       }
-                       else
-                       {
-                          return false;
-                       }
-                        }
-                       </script>  
             </td>
         </tr>
         <tr class="recu_dit">
             <td class="recu_dit">
-                <img class="img_list" src="creatina_on.jfif">  
+                <img class="img_list" src="creatina_on.png">  
             </td>
             <td class="recu_dit">
                 Creatina ON <br> Costo: $600
             </td>
             <td class="recu_dit">
-                <a href="#">Editar
+                <a href="productosedit.html">Editar
                 </td>
             <TD class="recu_dit"> 
-                <form method="post" action="#" onsubmit="return confirmation()">
-                    <button type="submit" style="width:80%;height:80%"> Borrar</button> 
-                     </form>
-                    <script type="text/javascript">
-                        function confirmation() 
-                        {
-                           if(confirm("¿Esta seguro de borrar el registro?"))
-                       {
-                          return true;
-                       }
-                       else
-                       {
-                          return false;
-                       }
-                        }
-                       </script>  
+                <form method="post" action="productosedit.html">
+                    <button class="btnProdu" type="submit"> Borrar</button> 
+                     </form>  
             </TD>
         </tr>
         <tr>
                 <TD class="recu_dit">
-                    <img class="img_list" src="creatina_bpi.jfif">
+                    <img class="img_list" src="creatina_bpi.png">
                 </TD>
             <TD class="recu_dit">
                 <p> BPI <br> Costo: $250</p>
             </TD>
             <TD class="recu_dit">
-                <p><a href="#">Editar</p>
+                <p><a href="productosedit.html">Editar</p>
                 </TD>
             <TD class="recu_dit">
-                <form method="post" action="#" onsubmit="return confirmation()">
-                    <button type="submit" style="width:80%;height:80%"> Borrar</button> 
+                <form method="post" action="productosedit.html">
+                    <button class="btnProdu" type="submit"> Borrar</button> 
                      </form>
-                    <script type="text/javascript">
-                        function confirmation() 
-                        {
-                           if(confirm("¿Esta seguro de borrar el registro?"))
-                       {
-                          return true;
-                       }
-                       else
-                       {
-                          return false;
-                       }
-                        }
-                       </script>  
             </TD>
         </tr>
         </table>
